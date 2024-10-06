@@ -15,6 +15,20 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Panel>
+        <!-- <ExperimentalAcrylicBorder IsHitTestVisible="False"> -->
+        <!--     <ExperimentalAcrylicBorder.Material> -->
+        <!--         <ExperimentalAcrylicMaterial -->
+        <!--             BackgroundSource="Digger" -->
+        <!--             TintColor="Black" -->
+        <!--             TintOpacity="1" -->
+        <!--             MaterialOpacity="0.15" /> -->
+        <!--     </ExperimentalAcrylicBorder.Material> -->
+        <!-- </ExperimentalAcrylicBorder> -->
+
+        <Panel Margin="20">
+            <ContentControl Content="{Binding FilmSelector}" />
+        </Panel>
+    </Panel>
 
 </Window>
